@@ -1,0 +1,101 @@
+message_id,date,customer_segment,channel,content,conversion_rate
+M001,2026-05-01,discount_sensitive,SMS,Bugüne özel seçili taze ürünlerde yüzde 25 indirim var.,0.18
+M002,2026-05-01,discount_sensitive,WhatsApp,Fiyat avantajı arayan müşteriler için son saat fırsatı başladı.,0.21
+M003,2026-05-01,discount_sensitive,Push,Yakın mağazada indirimli ürünleri tükenmeden ayırabilirsiniz.,0.17
+M004,2026-05-02,healthy_living,Email,Taze salata ve meyve ürünlerinde günlük sağlıklı sepet önerisi hazır.,0.12
+M005,2026-05-02,healthy_living,WhatsApp,Bugün smoothie ve kahvaltı sepeti için taze meyve fırsatı var.,0.19
+M006,2026-05-02,healthy_living,Push,Taze ürün soran müşteriler için sınırlı stok bildirimi gönderildi.,0.16
+M007,2026-05-03,family,WhatsApp,Aile kahvaltısına özel süt ürünü bundle kampanyası başladı.,0.15
+M008,2026-05-03,family,SMS,Çocuklu aileler için kahvaltılık ve fırın ürünleri avantajlı paket oldu.,0.14
+M009,2026-05-03,family,Email,Haftalık aile alışverişinde taze ürünleri birlikte daha uygun alın.,0.11
+M010,2026-05-04,nearby,Push,Yakın mağazada bugün hızlı teslimatla taze ürün fırsatları var.,0.24
+M011,2026-05-04,nearby,WhatsApp,15 dakika içinde teslim/alım için sınırlı stoklu fırsat ürünleri hazır.,0.22
+M012,2026-05-04,nearby,SMS,Yakın bölgeye özel gün sonu taze ürün indirimi başladı.,0.2
+M013,2026-05-05,premium,WhatsApp,Akşam yemeği için seçili balık ve protein ürünlerinde sınırlı stok avantajı.,0.14
+M014,2026-05-05,premium,Email,Bugün tüketim için önerilen premium protein ürünlerinde özel fiyat var.,0.1
+M015,2026-05-05,premium,SMS,Taze et ve balık ürünlerinde güvenli tüketim süresi içinde hızlı fırsat.,0.13
+M016,2026-05-06,bulk_buyer,WhatsApp,Toplu alım için sebze ve fırın ürünlerinde özel fiyat hazırlanabilir.,0.23
+M017,2026-05-06,bulk_buyer,Email,Restoran ve kafe alımlarına özel gün sonu paket teklifimiz var.,0.18
+M018,2026-05-06,bulk_buyer,SMS,Toplu sipariş verirseniz bugün teslim kampanyası uygulanabilir.,0.16
+M019,2026-05-07,complaint_risk,WhatsApp,Tazelik konusunda hassas olduğunuzu biliyoruz; bugün gelen ürünleri sizin için ayırabiliriz.,0.09
+M020,2026-05-07,complaint_risk,Email,Son alışveriş deneyiminiz için telafi amaçlı taze ürün avantajı sunuyoruz.,0.08
+M021,2026-05-07,complaint_risk,SMS,Memnuniyetiniz için seçili ürünlerde kontrollü tazelik ve özel fiyat sunuyoruz.,0.07
+M022,2026-05-08,bundle_ready,WhatsApp,Çilek yoğurt ve granola birlikte alındığında kahvaltı paketi avantajlı.,0.2
+M023,2026-05-08,bundle_ready,Push,Salata paketi için yeşillik sos ve sebze birlikte daha uygun.,0.18
+M024,2026-05-08,bundle_ready,Email,Akşam yemeği paketi protein salata ve içecek ile hazırlandı.,0.15
+M025,2026-05-09,expiry_question,WhatsApp,Merhaba son tüketim tarihi bugün olan ürünler güvenli tüketim bilgisiyle listelendi.,0.11
+M026,2026-05-09,expiry_question,SMS,Son tüketim tarihini soran müşteriler için ürün bilgisi kasada hazır.,0.1
+M027,2026-05-09,expiry_question,Email,Tazelik ve son tüketim bilgilerini içeren ürün önerileri hazırlandı.,0.09
+M028,2026-05-09,high_purchase_intent,WhatsApp,Daha önce benzer ürün aldığınız için bugünkü sınırlı stok fırsatını size ayırabiliriz.,0.26
+M029,2026-05-09,high_purchase_intent,Push,Sepetinize uygun taze ürün fırsatı mağazada hazır.,0.22
+M030,2026-05-09,fast_delivery,WhatsApp,Hızlı teslimat isteyen müşteriler için bugün yakın bölge öncelikli fırsat var.,0.25
+M031,2026-05-09,freshness_intent,SMS,Bugün taze gelen ürünlerde sınırlı stok ve kısa süreli avantaj başladı.,0.17
+M032,2026-05-09,freshness_intent,Email,Taze ürün arayan müşterilere özel günlük reyon önerileri hazır.,0.13
+M033,2026-05-06,discount_sensitive,SMS,Bugün kapanışa kadar seçili ürünlerde bütçe dostu fırsat var.,0.18
+M034,2026-05-07,discount_sensitive,WhatsApp,Fiyat hassas müşteriler için son saat indirim listesi hazır.,0.22
+M035,2026-05-08,healthy_living,Push,Taze meyve ve salata ürünlerinde bugün teslim avantajı başladı.,0.17
+M036,2026-05-09,healthy_living,Email,Sağlıklı yaşam sepeti için taze sebze ve meyve önerileri hazır.,0.13
+M037,2026-05-01,family,WhatsApp,Aile kahvaltısı için süt ürünleri ve fırın ürünlerinde paket avantajı var.,0.16
+M038,2026-05-02,family,SMS,Çocuklu ailelere özel taze kahvaltılık fırsatları bugün geçerli.,0.14
+M039,2026-05-03,nearby,Push,Yakın bölgedeki müşterilere hızlı teslimatlı taze ürün fırsatı açıldı.,0.25
+M040,2026-05-04,nearby,WhatsApp,Mağazaya yakın müşteriler için bugün al-götür avantajı hazır.,0.21
+M041,2026-05-05,premium,WhatsApp,Akşam yemeği için premium protein ürünlerinde sınırlı stok fırsatı var.,0.15
+M042,2026-05-06,premium,Email,Özel ürün arayan müşterilere taze balık ve et önerileri gönderildi.,0.11
+M043,2026-05-07,bulk_buyer,WhatsApp,Toplu alım yapan restoran ve kafeler için özel fiyat hazırlanabilir.,0.24
+M044,2026-05-08,bulk_buyer,Email,Bugün fırın ve sebze ürünlerinde toplu sipariş avantajı sunuluyor.,0.19
+M045,2026-05-09,complaint_risk,SMS,Tazelik konusunda hassas müşterilere kontrollü ürün bilgisi gönderildi.,0.08
+M046,2026-05-01,complaint_risk,WhatsApp,Memnuniyet için bugünkü en taze ürünleri sizin için ayırabiliriz.,0.1
+M047,2026-05-02,bundle_ready,Push,Birlikte daha avantajlı olan kahvaltı ve salata paketleri hazır.,0.2
+M048,2026-05-03,bundle_ready,Email,Tamamlayıcı ürünlerle oluşturulan günlük bundle önerileri listelendi.,0.16
+M049,2026-05-04,expiry_question,WhatsApp,Son tüketim tarihini soran müşterilere güvenli tüketim bilgisi hazırlandı.,0.11
+M050,2026-05-05,expiry_question,SMS,Bugün tüketim önerilen ürünlerin bilgi kartı kasada hazır.,0.1
+M051,2026-05-06,high_purchase_intent,WhatsApp,Daha önce benzer ürün alan müşterilere sınırlı stok fırsatı ayrıldı.,0.27
+M052,2026-05-07,high_purchase_intent,Push,Sepete uygun taze ürün fırsatı için hızlı bildirim gönderildi.,0.23
+M053,2026-05-08,fast_delivery,WhatsApp,Hızlı teslimat isteyen müşterilere yakın bölge fırsatı hazır.,0.25
+M054,2026-05-09,fast_delivery,Push,Bugün teslim edilebilecek taze ürünler için öncelikli bildirim açıldı.,0.22
+M055,2026-05-01,freshness_intent,SMS,Taze ürün soran müşterilere günlük reyon önerileri gönderildi.,0.17
+M056,2026-05-02,freshness_intent,Email,Bugün gelen ürünler ve tazelik bilgileri müşterilerle paylaşıldı.,0.14
+M057,2026-05-03,cooperative_member,WhatsApp,Yerel üretici ve kooperatif ürünleri için günlük destek fırsatı hazır.,0.18
+M058,2026-05-04,cooperative_member,Email,Kooperatif ürünlerinde fireyi azaltan özel alışveriş önerileri paylaşıldı.,0.15
+M059,2026-05-05,cafe_owner,WhatsApp,Kafe ve küçük işletmelere fırın ürünleri için gün sonu paket teklifi var.,0.23
+M060,2026-05-06,cafe_owner,Email,Kafe menüsüne uygun sandviç ve salata ürünlerinde toplu alım avantajı sunuluyor.,0.18
+M061,2026-05-07,discount_sensitive,SMS,Bugün kapanışa kadar seçili ürünlerde bütçe dostu fırsat var.,0.18
+M062,2026-05-08,discount_sensitive,WhatsApp,Fiyat hassas müşteriler için son saat indirim listesi hazır.,0.22
+M063,2026-05-09,healthy_living,Push,Taze meyve ve salata ürünlerinde bugün teslim avantajı başladı.,0.17
+M064,2026-05-01,healthy_living,Email,Sağlıklı yaşam sepeti için taze sebze ve meyve önerileri hazır.,0.13
+M065,2026-05-02,family,WhatsApp,Aile kahvaltısı için süt ürünleri ve fırın ürünlerinde paket avantajı var.,0.16
+M066,2026-05-03,family,SMS,Çocuklu ailelere özel taze kahvaltılık fırsatları bugün geçerli.,0.14
+M067,2026-05-04,nearby,Push,Yakın bölgedeki müşterilere hızlı teslimatlı taze ürün fırsatı açıldı.,0.25
+M068,2026-05-05,nearby,WhatsApp,Mağazaya yakın müşteriler için bugün al-götür avantajı hazır.,0.21
+M069,2026-05-06,premium,WhatsApp,Akşam yemeği için premium protein ürünlerinde sınırlı stok fırsatı var.,0.15
+M070,2026-05-07,premium,Email,Özel ürün arayan müşterilere taze balık ve et önerileri gönderildi.,0.11
+M071,2026-05-08,bulk_buyer,WhatsApp,Toplu alım yapan restoran ve kafeler için özel fiyat hazırlanabilir.,0.24
+M072,2026-05-09,bulk_buyer,Email,Bugün fırın ve sebze ürünlerinde toplu sipariş avantajı sunuluyor.,0.19
+M073,2026-05-01,complaint_risk,SMS,Tazelik konusunda hassas müşterilere kontrollü ürün bilgisi gönderildi.,0.08
+M074,2026-05-02,complaint_risk,WhatsApp,Memnuniyet için bugünkü en taze ürünleri sizin için ayırabiliriz.,0.1
+M075,2026-05-03,bundle_ready,Push,Birlikte daha avantajlı olan kahvaltı ve salata paketleri hazır.,0.2
+M076,2026-05-04,bundle_ready,Email,Tamamlayıcı ürünlerle oluşturulan günlük bundle önerileri listelendi.,0.16
+M077,2026-05-05,expiry_question,WhatsApp,Son tüketim tarihini soran müşterilere güvenli tüketim bilgisi hazırlandı.,0.11
+M078,2026-05-06,expiry_question,SMS,Bugün tüketim önerilen ürünlerin bilgi kartı kasada hazır.,0.1
+M079,2026-05-07,high_purchase_intent,WhatsApp,Daha önce benzer ürün alan müşterilere sınırlı stok fırsatı ayrıldı.,0.27
+M080,2026-05-08,high_purchase_intent,Push,Sepete uygun taze ürün fırsatı için hızlı bildirim gönderildi.,0.23
+M081,2026-05-09,fast_delivery,WhatsApp,Hızlı teslimat isteyen müşterilere yakın bölge fırsatı hazır.,0.25
+M082,2026-05-01,fast_delivery,Push,Bugün teslim edilebilecek taze ürünler için öncelikli bildirim açıldı.,0.22
+M083,2026-05-02,freshness_intent,SMS,Taze ürün soran müşterilere günlük reyon önerileri gönderildi.,0.17
+M084,2026-05-03,freshness_intent,Email,Bugün gelen ürünler ve tazelik bilgileri müşterilerle paylaşıldı.,0.14
+M085,2026-05-04,cooperative_member,WhatsApp,Yerel üretici ve kooperatif ürünleri için günlük destek fırsatı hazır.,0.18
+M086,2026-05-05,cooperative_member,Email,Kooperatif ürünlerinde fireyi azaltan özel alışveriş önerileri paylaşıldı.,0.15
+M087,2026-05-06,cafe_owner,WhatsApp,Kafe ve küçük işletmelere fırın ürünleri için gün sonu paket teklifi var.,0.23
+M088,2026-05-07,cafe_owner,Email,Kafe menüsüne uygun sandviç ve salata ürünlerinde toplu alım avantajı sunuluyor.,0.18
+M089,2026-05-08,discount_sensitive,SMS,Bugün kapanışa kadar seçili ürünlerde bütçe dostu fırsat var.,0.18
+M090,2026-05-09,discount_sensitive,WhatsApp,Fiyat hassas müşteriler için son saat indirim listesi hazır.,0.22
+M091,2026-05-01,healthy_living,Push,Taze meyve ve salata ürünlerinde bugün teslim avantajı başladı.,0.17
+M092,2026-05-02,healthy_living,Email,Sağlıklı yaşam sepeti için taze sebze ve meyve önerileri hazır.,0.13
+M093,2026-05-03,family,WhatsApp,Aile kahvaltısı için süt ürünleri ve fırın ürünlerinde paket avantajı var.,0.16
+M094,2026-05-04,family,SMS,Çocuklu ailelere özel taze kahvaltılık fırsatları bugün geçerli.,0.14
+M095,2026-05-05,nearby,Push,Yakın bölgedeki müşterilere hızlı teslimatlı taze ürün fırsatı açıldı.,0.25
+M096,2026-05-06,nearby,WhatsApp,Mağazaya yakın müşteriler için bugün al-götür avantajı hazır.,0.21
+M097,2026-05-07,premium,WhatsApp,Akşam yemeği için premium protein ürünlerinde sınırlı stok fırsatı var.,0.15
+M098,2026-05-08,premium,Email,Özel ürün arayan müşterilere taze balık ve et önerileri gönderildi.,0.11
+M099,2026-05-09,bulk_buyer,WhatsApp,Toplu alım yapan restoran ve kafeler için özel fiyat hazırlanabilir.,0.24
+M100,2026-05-01,bulk_buyer,Email,Bugün fırın ve sebze ürünlerinde toplu sipariş avantajı sunuluyor.,0.19

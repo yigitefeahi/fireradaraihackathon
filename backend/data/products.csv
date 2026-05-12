@@ -1,0 +1,81 @@
+product_id,name,category,unit_cost,unit_price,stock_quantity,expiry_date,supplier,perishability_score,storage_type,min_stock_threshold
+P001,Organik Süt 1L,Süt Ürünleri,21.5,34.9,72,2026-05-14,Anadolu Süt,8,Soğuk,30
+P002,Tavuk Göğüs 500g,Et ve Tavuk,68.0,99.9,38,2026-05-12,Lezzet Tavuk,9,Soğuk,18
+P003,Çilek 500g,Meyve,29.0,49.9,55,2026-05-11,Ege Bahçe,10,Soğuk,20
+P004,Yoğurt 1kg,Süt Ürünleri,27.0,44.9,110,2026-05-20,Anadolu Süt,7,Soğuk,35
+P005,Hazır Salata 250g,Hazır Yemek,18.0,32.9,64,2026-05-13,FreshBox,9,Soğuk,24
+P006,Yumurta 15li,Süt Ürünleri,42.0,69.9,86,2026-05-27,Köyden,5,Serin,30
+P007,Somon Fileto 300g,Balık,95.0,149.9,22,2026-05-12,Denizci,10,Soğuk,10
+P008,Keçi Peyniri 300g,Süt Ürünleri,58.0,89.9,41,2026-06-03,Anadolu Süt,6,Soğuk,12
+P009,Muz 1kg,Meyve,24.0,39.9,95,2026-05-15,Tropik Gıda,8,Oda,30
+P010,Domates 1kg,Sebze,16.0,29.9,120,2026-05-13,Ege Bahçe,8,Serin,40
+P011,Marul Adet,Sebze,9.0,17.9,75,2026-05-11,Yeşil Tarla,10,Soğuk,25
+P012,Brokoli 500g,Sebze,18.0,34.9,46,2026-05-16,Yeşil Tarla,7,Soğuk,18
+P013,Hindi Füme 200g,Et ve Tavuk,42.0,69.9,34,2026-05-18,Lezzet Tavuk,7,Soğuk,14
+P014,Dana Kıyma 500g,Et ve Tavuk,105.0,159.9,28,2026-05-12,Kasap Usta,10,Soğuk,12
+P015,Levrek 400g,Balık,88.0,139.9,18,2026-05-11,Denizci,10,Soğuk,8
+P016,Karides 250g,Balık,120.0,189.9,16,2026-05-15,Denizci,9,Soğuk,6
+P017,Tam Buğday Ekmek,Fırın,11.0,22.9,90,2026-05-10,Fırıncı,10,Oda,35
+P018,Kruvasan 4lü,Fırın,28.0,49.9,44,2026-05-10,Fırıncı,10,Oda,16
+P019,Pişmiş Nohut 400g,Hazır Yemek,20.0,36.9,52,2026-05-17,FreshBox,6,Soğuk,18
+P020,Tavuklu Sandviç,Hazır Yemek,26.0,44.9,48,2026-05-11,FreshBox,10,Soğuk,20
+P021,Elma 1kg,Meyve,18.0,32.9,130,2026-05-23,Ege Bahçe,5,Oda,45
+P022,Avokado Adet,Meyve,22.0,39.9,58,2026-05-14,Tropik Gıda,8,Oda,18
+P023,Beyaz Peynir 500g,Süt Ürünleri,48.0,79.9,66,2026-05-26,Anadolu Süt,5,Soğuk,20
+P024,Mercimek Çorbası,Hazır Yemek,14.0,27.9,42,2026-05-12,FreshBox,9,Soğuk,18
+P025,Kefir 1L,Süt Ürünleri,24.0,39.9,78,2026-05-15,Anadolu Süt,7,Soğuk,25
+P026,Ayran 300ml,Süt Ürünleri,8.0,14.9,160,2026-05-13,Anadolu Süt,8,Soğuk,60
+P027,Taze Kaşar 400g,Süt Ürünleri,62.0,99.9,44,2026-05-24,Trakya Mandıra,6,Soğuk,18
+P028,Lor Peyniri 250g,Süt Ürünleri,22.0,38.9,52,2026-05-16,Trakya Mandıra,8,Soğuk,20
+P029,Kaymak 200g,Süt Ürünleri,35.0,59.9,36,2026-05-12,Köyden,9,Soğuk,12
+P030,Tereyağı 250g,Süt Ürünleri,55.0,89.9,48,2026-06-01,Köyden,5,Soğuk,15
+P031,Şeftali 1kg,Meyve,26.0,44.9,115,2026-05-14,Ege Bahçe,9,Serin,35
+P032,Üzüm 500g,Meyve,32.0,54.9,84,2026-05-13,Ege Bahçe,9,Soğuk,28
+P033,Karpuz Dilim,Meyve,18.0,31.9,70,2026-05-11,Tropik Gıda,10,Soğuk,24
+P034,Armut 1kg,Meyve,20.0,36.9,96,2026-05-20,Ege Bahçe,6,Oda,30
+P035,Yaban Mersini 125g,Meyve,42.0,69.9,38,2026-05-12,Tropik Gıda,10,Soğuk,14
+P036,Limon 1kg,Meyve,19.0,34.9,130,2026-05-25,Akdeniz Tarım,5,Oda,40
+P037,Salatalık 1kg,Sebze,15.0,27.9,125,2026-05-12,Yeşil Tarla,9,Serin,42
+P038,Biber 500g,Sebze,22.0,39.9,88,2026-05-13,Yeşil Tarla,8,Serin,30
+P039,Mantar 400g,Sebze,28.0,49.9,58,2026-05-11,Yeşil Tarla,10,Soğuk,20
+P040,Ispanak 500g,Sebze,16.0,29.9,72,2026-05-10,Yeşil Tarla,10,Soğuk,24
+P041,Roka Demet,Sebze,7.0,14.9,95,2026-05-10,Yeşil Tarla,10,Soğuk,30
+P042,Patlıcan 1kg,Sebze,18.0,32.9,105,2026-05-16,Ege Bahçe,7,Serin,35
+P043,Kuzu Kuşbaşı 500g,Et ve Tavuk,135.0,199.9,26,2026-05-12,Kasap Usta,10,Soğuk,10
+P044,Izgara Köfte 400g,Et ve Tavuk,86.0,134.9,42,2026-05-13,Kasap Usta,9,Soğuk,16
+P045,Tavuk Kanat 700g,Et ve Tavuk,58.0,89.9,64,2026-05-12,Lezzet Tavuk,9,Soğuk,22
+P046,Hindi But 600g,Et ve Tavuk,72.0,112.9,36,2026-05-15,Lezzet Tavuk,8,Soğuk,14
+P047,Dana Antrikot 300g,Et ve Tavuk,150.0,229.9,20,2026-05-13,Kasap Usta,10,Soğuk,8
+P048,Tavuk Şiş 500g,Et ve Tavuk,62.0,96.9,46,2026-05-11,Lezzet Tavuk,10,Soğuk,18
+P049,Çipura 400g,Balık,82.0,129.9,24,2026-05-11,Denizci,10,Soğuk,8
+P050,Hamsi 500g,Balık,45.0,74.9,52,2026-05-10,Denizci,10,Soğuk,18
+P051,Kalamar 300g,Balık,105.0,169.9,18,2026-05-14,Denizci,9,Soğuk,6
+P052,Ton Balığı Taze 250g,Balık,76.0,119.9,30,2026-05-12,Denizci,10,Soğuk,10
+P053,Uskumru 400g,Balık,58.0,94.9,34,2026-05-13,Denizci,10,Soğuk,12
+P054,Mezgit Fileto 350g,Balık,72.0,112.9,28,2026-05-12,Denizci,10,Soğuk,10
+P055,Simit 4lü,Fırın,12.0,24.9,120,2026-05-10,Fırıncı,10,Oda,40
+P056,Poğaça 6lı,Fırın,24.0,42.9,86,2026-05-10,Fırıncı,10,Oda,30
+P057,Ekşi Maya Ekmek,Fırın,18.0,34.9,70,2026-05-11,Fırıncı,9,Oda,24
+P058,Baget Ekmek,Fırın,10.0,19.9,96,2026-05-10,Fırıncı,10,Oda,32
+P059,Sandviç Ekmeği 6lı,Fırın,16.0,29.9,74,2026-05-12,Fırıncı,8,Oda,25
+P060,Mini Pizza 4lü,Fırın,32.0,54.9,44,2026-05-11,Fırıncı,9,Soğuk,16
+P061,Sebzeli Lazanya,Hazır Yemek,38.0,64.9,46,2026-05-12,FreshBox,10,Soğuk,18
+P062,Zeytinyağlı Yaprak Sarma,Hazır Yemek,30.0,52.9,58,2026-05-16,FreshBox,7,Soğuk,20
+P063,Tavuklu Makarna,Hazır Yemek,34.0,58.9,62,2026-05-11,FreshBox,10,Soğuk,24
+P064,Falafel Bowl,Hazır Yemek,29.0,49.9,54,2026-05-13,FreshBox,9,Soğuk,20
+P065,Protein Salata,Hazır Yemek,33.0,56.9,66,2026-05-12,FreshBox,10,Soğuk,24
+P066,Mercimek Köftesi,Hazır Yemek,18.0,34.9,80,2026-05-14,FreshBox,8,Soğuk,28
+P067,Kooperatif Balı 250g,Kooperatif Ürünü,70.0,109.9,34,2026-07-20,Kadın Kooperatifi,3,Oda,10
+P068,Ev Yapımı Reçel 300g,Kooperatif Ürünü,38.0,64.9,48,2026-06-18,Kadın Kooperatifi,4,Oda,14
+P069,Günlük Tarhana Çorbası,Hazır Yemek,16.0,29.9,56,2026-05-12,Koop Mutfak,9,Soğuk,20
+P070,Köy Tereyağlı Mantı,Hazır Yemek,42.0,72.9,40,2026-05-13,Koop Mutfak,9,Soğuk,15
+P071,Organik Kabak 1kg,Sebze,14.0,26.9,92,2026-05-15,Koop Tarla,7,Serin,30
+P072,Köy Domatesi 1kg,Sebze,22.0,39.9,118,2026-05-13,Koop Tarla,9,Serin,40
+P073,Böğürtlen 125g,Meyve,36.0,62.9,42,2026-05-11,Koop Tarla,10,Soğuk,15
+P074,Köy Yoğurdu 750g,Süt Ürünleri,31.0,54.9,74,2026-05-16,Koop Mandıra,8,Soğuk,25
+P075,Çiftlik Sütü 1L,Süt Ürünleri,23.0,38.9,108,2026-05-13,Koop Mandıra,9,Soğuk,36
+P076,Günlük Peynir Tabağı,Süt Ürünleri,54.0,89.9,38,2026-05-12,Koop Mandıra,10,Soğuk,14
+P077,Vegan Wrap,Hazır Yemek,25.0,44.9,60,2026-05-11,FreshBox,10,Soğuk,22
+P078,Ton Balıklı Sandviç,Hazır Yemek,31.0,54.9,48,2026-05-10,FreshBox,10,Soğuk,18
+P079,Kahvaltı Kutusu,Hazır Yemek,44.0,74.9,50,2026-05-12,FreshBox,9,Soğuk,18
+P080,Meyve Kupası,Hazır Yemek,20.0,36.9,76,2026-05-10,FreshBox,10,Soğuk,25
