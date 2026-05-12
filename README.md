@@ -31,10 +31,7 @@ FireRadar AI projesi, değerlendirme kriterlerine aşağıdaki yaklaşımlarla k
     *   Kullanıcı dostu hata mesajları ve API bağlantı sorunları için fallback metinleri mevcuttur.
 5.  **Yenilikçilik**
     *   FireRadar AI, sadece bir chatbot olmanın ötesinde; risk skoru hesaplama, net etki simülasyonu, ROI benzeri önceliklendirme ve fire/kg/CO2 etkisini bir arada değerlendirme gibi yenilikçi özellikler sunar.
-6.  **Çalışabilirlik**
-    *   Uçtan uca demo akışı yerel ortamda sorunsuz bir şekilde çalışmaktadır.
-    *   `backend/tests` dizini altında API sözleşmesi (contract) ve birim testleri (unit tests) bulunmaktadır.
-7.  **Dokümantasyon ve Kod Paylaşımı**
+6.  **Dokümantasyon ve Kod Paylaşımı**
     *   README dosyası, kurulum adımları, mimari genel bakış, API endpointleri ve test süreçlerini kapsamlı bir şekilde açıklar.
 
 <img width="1106" height="826" alt="image" src="https://github.com/user-attachments/assets/03318036-a9d4-4bfb-a8c5-116d55486fd7" />
