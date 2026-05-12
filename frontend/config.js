@@ -7,7 +7,7 @@
  * window.__FIRERADAR_API_BASE__ enjekte edin.
  */
 (function () {
-  const PRODUCTION_API_BASE = "https://fireradar-ai-1.onrender.com";
+  const PRODUCTION_API_BASE = "https://fireradaraihackathon.onrender.com";
 
   function looksLikeLocalHost(hostname) {
     if (!hostname) return true;
