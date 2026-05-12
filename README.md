@@ -1,52 +1,52 @@
 # FireRadar AI
 
-FireRadar AI, gıda KOBİ'leri ve kooperatiflerde son kullanım tarihi yaklaşan ürünleri erken tespit edip finansal etkiyi hesaplayan ve aksiyon öneren bir AI operasyon MVP'sidir.
+FireRadar AI, gıda KOBİ'leri ve kooperatiflerde son kullanım tarihi yaklaşan ürünleri erken tespit ederek finansal etkiyi hesaplayan ve aksiyon öneren bir yapay zeka destekli operasyonel MVP'dir.
 
 <img width="1277" height="822" alt="image" src="https://github.com/user-attachments/assets/56241a6e-8a2e-4e9e-8309-831ccdfeacb3" />
 
+## Problem ve Çözüm
 
-## Problem ve Çözüm 
-
-- Problem: Stok, sipariş, kampanya ve tedarik kararlarının manuel yürütülmesi fireyi geç fark ettiriyor ve kaybı artırıyor.
-- Çözüm: FireRadar tek panelde risk hesaplayıp en etkili aksiyonu öneriyor, kampanya/tedarik iletişim taslağı üretip operasyonu hızlandırıyor.
+*   **Problem:** Stok, sipariş, kampanya ve tedarik kararlarının manuel yürütülmesi, firenin geç fark edilmesine ve kayıpların artmasına neden olmaktadır.
+*   **Çözüm:** FireRadar AI, tek bir panel üzerinden riskleri hesaplar, en etkili aksiyonları önerir, kampanya ve tedarikçi iletişim taslakları üreterek operasyonel süreçleri hızlandırır.
 
 ## Konumlandırma
 
-Risk motoru + simülasyon motoru + LLM destekli operasyon ajanı.
+Risk motoru, simülasyon motoru ve LLM destekli operasyon ajanı entegrasyonu.
 
-## Jüri Kriteri -> Bizdeki Karşılığı
+## Jüri Değerlendirme Alanları ve FireRadar AI'ın Katkısı
 
-1. Problem Tanımı ve Değer Önerisi
-   - `backend/services/risk_engine.py` fire riskini ürün bazında hesaplar.
-   - `frontend/index.html` ana panelde "bugün ne yapmalıyım" akışına odaklanır.
-2. AI Kullanımının Doğruluğu
-   - LLM, karar motorundan gelen sayısal çıktı üzerinden metin üretir (`backend/services/ai_service.py`).
-   - API key yoksa fallback devreye girer; demo sürekliliği korunur.
-3. Teknik Uygulama ve Mimari
-   - FastAPI backend + modüler servisler + sade frontend.
-   - `main.py` endpoint orkestrasyonu, servisler domain mantığı.
-4. Ürünleşme ve Kullanıcı Deneyimi
-   - Tek ekran KPI + simüle et + aksiyon seç + ajan çalıştır.
-   - Hata mesajları ve API bağlantı fallback metinleri mevcut.
-5. Yenilikçilik
-   - Sadece chatbot değil: risk skoru + net etki simülasyonu + ROI benzeri öncelik + fire/kg/CO2 birlikte.
-6. Çalışabilirlik
-   - Uçtan uca demo akışı localde çalışır.
-   - `backend/tests` altında API contract ve unit testler vardır.
-7. Dokümantasyon ve Kod Paylaşımı
-   - README kurulum, mimari, endpoint ve test adımlarını kapsar.
+FireRadar AI projesi, değerlendirme kriterlerine aşağıdaki yaklaşımlarla katkı sağlamaktadır:
+
+1.  **Problem Tanımı ve Değer Önerisi**
+    *   `backend/services/risk_engine.py` modülü, ürün bazında fire riskini detaylı bir şekilde hesaplar.
+    *   `frontend/index.html` ana paneli, kullanıcının "bugün ne yapmalıyım" sorusuna odaklanarak hızlı ve etkili aksiyon önerileri sunar.
+2.  **Yapay Zeka Kullanımının Doğruluğu**
+    *   LLM (Büyük Dil Modeli), karar motorundan gelen sayısal çıktılar üzerinden anlamlı ve bağlamsal metinler üretir (`backend/services/ai_service.py`).
+    *   API anahtarı bulunmadığında dahi demo sürekliliğini sağlamak amacıyla bir geri dönüş (fallback) mekanizması devreye girer.
+3.  **Teknik Uygulama ve Mimari**
+    *   Proje, FastAPI tabanlı bir backend, modüler servisler ve sade bir frontend mimarisi üzerine kurulmuştur.
+    *   `main.py` dosyası, endpoint orkestrasyonunu yönetirken, servisler alan odaklı (domain-driven) bir yaklaşımla tasarlanmıştır.
+4.  **Ürünleşme ve Kullanıcı Deneyimi**
+    *   Tek ekran üzerinden KPI takibi, simülasyon yapma, aksiyon seçimi ve ajan çalıştırma gibi temel işlevler sunulur.
+    *   Kullanıcı dostu hata mesajları ve API bağlantı sorunları için fallback metinleri mevcuttur.
+5.  **Yenilikçilik**
+    *   FireRadar AI, sadece bir chatbot olmanın ötesinde; risk skoru hesaplama, net etki simülasyonu, ROI benzeri önceliklendirme ve fire/kg/CO2 etkisini bir arada değerlendirme gibi yenilikçi özellikler sunar.
+6.  **Çalışabilirlik**
+    *   Uçtan uca demo akışı yerel ortamda sorunsuz bir şekilde çalışmaktadır.
+    *   `backend/tests` dizini altında API sözleşmesi (contract) ve birim testleri (unit tests) bulunmaktadır.
+7.  **Dokümantasyon ve Kod Paylaşımı**
+    *   README dosyası, kurulum adımları, mimari genel bakış, API endpointleri ve test süreçlerini kapsamlı bir şekilde açıklar.
 
 <img width="1106" height="826" alt="image" src="https://github.com/user-attachments/assets/03318036-a9d4-4bfb-a8c5-116d55486fd7" />
 
-
 ## MVP Kapsamı
 
-- Ürün bazlı risk analizi
-- Tahmini fire maliyeti ve kurtarılabilir değer
-- Aksiyon karşılaştırması ve en iyi aksiyon seçimi
-- Segment bazlı kampanya metni ve tedarikçi mail taslağı
-- Aksiyon loglama (`pending/sent/failed/completed`)
-- Webhook dispatch ile "aksiyon alabilen" entegrasyon kanıtı
+*   Ürün bazlı risk analizi
+*   Tahmini fire maliyeti ve kurtarılabilir değer
+*   Aksiyon karşılaştırması ve en iyi aksiyon seçimi
+*   Segment bazlı kampanya metni ve tedarikçi mail taslağı
+*   Aksiyon loglama (`pending/sent/failed/completed`)
+*   Webhook dispatch ile "aksiyon alabilen" entegrasyon kanıtı
 
 ## Teknik Mimari
 
@@ -64,37 +64,38 @@ LLM Layer (campaign/supplier/summary/chat)
 Action Log + Webhook Dispatch
 ```
 
-- Backend: FastAPI + Python
-- Frontend: HTML/CSS/JavaScript
-- Veri: CSV tabanlı demo veri
-- AI: OpenAI veya Gemini (anahtar yoksa deterministic fallback)
+*   **Backend:** FastAPI + Python
+*   **Frontend:** HTML/CSS/JavaScript
+*   **Veri:** CSV tabanlı demo veri
+*   **Yapay Zeka:** OpenAI veya Gemini (anahtar yoksa deterministik fallback)
 
-## AI Nerede Kullanılıyor?
+## Yapay Zeka Kullanım Alanları
 
-- Günlük özet metni
-- Kampanya mesajı varyantları
-- Tedarikçi sipariş mail taslağı
-- Chat asistanı ve demo pitch metni
+FireRadar AI, yapay zekayı aşağıdaki alanlarda etkin bir şekilde kullanır:
 
-Not: Sayısal kararlar risk/simülasyon motorunda üretilir, LLM metin katmanıdır.
+*   Günlük özet metni oluşturma
+*   Kampanya mesajı varyantları üretme
+*   Tedarikçi sipariş mail taslağı hazırlama
+*   Chat asistanı ve demo pitch metni oluşturma
 
-## Decision Logic (Motor Kuralları)
+**Not:** Sayısal kararlar ve risk/simülasyon motoru tarafından üretilen temel analizler, sistemin çekirdeğini oluşturur. Büyük Dil Modelleri (LLM) ise bu kararların metinsel olarak ifade edilmesi, kampanya ve iletişim taslaklarının oluşturulması gibi metin katmanı işlevlerini yerine getirir. İstenildiği takdirde, LLM'ler karar alma süreçlerine daha derinlemesine entegre edilebilir.
+
+## Karar Mantığı (Motor Kuralları)
 
 LLM sadece metin üretir; karar seçimi backend motoru tarafında şu kurallarla yapılır:
 
-1. Stok, SKT ve son dönem satış hızından ürün bazlı `risk_score` hesaplanır.
-2. Kategoriye göre risk ağırlıkları değişir (et/balıkta SKT baskısı daha yüksek).
-3. Fire maliyeti, kurtarılabilir değer, kg fire ve CO2 etkisi birlikte hesaplanır.
-4. Her ürün için birden fazla aksiyon senaryosu (indirim + kanal) simüle edilir.
-5. Simülasyonda kanal bazlı operasyon maliyeti uygulanır (SMS/WhatsApp/E-posta/Push).
-6. `net_impact = prevented_loss + gross_margin - operation_cost` formülü kullanılır.
-7. Et/balık kategorisinde SKT=0 ve agresif kampanya durumunda hard constraint devreye girer.
-8. Hard constraint durumunda kampanya yerine güvenli prosedür (kalite kontrol/ayrıştırma) önerilir.
-9. Müşteri hedefleme, kategori + segment + ilgi etiketi + kanal tercihi ile yapılır.
+1.  Stok, SKT ve son dönem satış hızından ürün bazlı `risk_score` hesaplanır.
+2.  Kategoriye göre risk ağırlıkları değişir (et/balıkta SKT baskısı daha yüksek).
+3.  Fire maliyeti, kurtarılabilir değer, kg fire ve CO2 etkisi birlikte hesaplanır.
+4.  Her ürün için birden fazla aksiyon senaryosu (indirim + kanal) simüle edilir.
+5.  Simülasyonda kanal bazlı operasyon maliyeti uygulanır (SMS/WhatsApp/E-posta/Push).
+6.  `net_impact = prevented_loss + gross_margin - operation_cost` formülü kullanılır.
+7.  Et/balık kategorisinde SKT=0 ve agresif kampanya durumunda hard constraint devreye girer.
+8.  Hard constraint durumunda kampanya yerine güvenli prosedür (kalite kontrol/ayrıştırma) önerilir.
+9.  Müşteri hedefleme, kategori + segment + ilgi etiketi + kanal tercihi ile yapılır.
 10. Nihai seçim, net etki ve kayıp azaltım yüzdesine göre sıralanarak belirlenir.
 
 <img width="1232" height="752" alt="image" src="https://github.com/user-attachments/assets/f074aaf6-12c3-4d52-adab-c097c6dd7d77" />
-
 
 ## Kurulum
 
@@ -121,9 +122,9 @@ Tarayıcı:
 http://localhost:5173/?api=http://localhost:8000
 ```
 
-## Env Değişkenleri
+## Ortam Değişkenleri
 
-Backend için:
+Backend için gerekli ortam değişkenleri aşağıda listelenmiştir:
 
 ```bash
 AI_PROVIDER=openai
@@ -134,7 +135,7 @@ GEMINI_MODEL=gemini-1.5-flash
 AI_TIMEOUT_SECONDS=20
 DEMO_PRODUCT_ID=P001
 
-# CORS: production için en az birini ayarlayın
+# CORS: Üretim ortamı için en az birini ayarlayın
 CORS_ORIGINS=http://localhost:5173,https://your-frontend-domain
 CORS_ORIGIN_REGEX=^https://.*\\.netlify\\.app$
 FRONTEND_URL=https://your-frontend-domain
@@ -142,39 +143,39 @@ FRONTEND_URL=https://your-frontend-domain
 
 ## API Özeti
 
-Genel:
+### Genel Endpointler:
 
-- `GET /`
-- `GET /risk-analysis`
-- `GET /executive-dashboard`
-- `GET /operations-snapshot`
-- `GET /before-after-impact`
-- `GET /impact-report`
+*   `GET /`
+*   `GET /risk-analysis`
+*   `GET /executive-dashboard`
+*   `GET /operations-snapshot`
+*   `GET /before-after-impact`
+*   `GET /impact-report`
 
-Ürün bazlı:
+### Ürün Bazlı Endpointler:
 
-- `GET /decision-explanation/{product_id}`
-- `GET /action-comparison/{product_id}`
-- `GET /segment-matches/{product_id}`
-- `GET /supplier-decision/{product_id}`
-- `GET /recommendation-evidence/{product_id}`
+*   `GET /decision-explanation/{product_id}`
+*   `GET /action-comparison/{product_id}`
+*   `GET /segment-matches/{product_id}`
+*   `GET /supplier-decision/{product_id}`
+*   `GET /recommendation-evidence/{product_id}`
 
-Agent ve aksiyon:
+### Agent ve Aksiyon Endpointleri:
 
-- `GET /run-agent/{product_id}` (read-only preview, log yazmaz)
-- `POST /run-agent/{product_id}` (execute, isteğe bağlı log yazar)
-- `POST /actions/log`
-- `GET /actions/log`
-- `POST /actions/dispatch-webhook`
+*   `GET /run-agent/{product_id}` (Sadece okuma önizlemesi, log yazmaz)
+*   `POST /run-agent/{product_id}` (Aksiyonu yürütür, isteğe bağlı log yazar)
+*   `POST /actions/log`
+*   `GET /actions/log`
+*   `POST /actions/dispatch-webhook`
 
-Üretim/simülasyon:
+### Üretim/Simülasyon Endpointleri:
 
-- `POST /simulate-action`
-- `POST /generate-action-plan`
-- `POST /generate-campaign-message`
-- `POST /generate-supplier-order`
-- `POST /ask-ai`
-- `POST /generate-demo-pitch`
+*   `POST /simulate-action`
+*   `POST /generate-action-plan`
+*   `POST /generate-campaign-message`
+*   `POST /generate-supplier-order`
+*   `POST /ask-ai`
+*   `POST /generate-demo-pitch`
 
 ## Hızlı Smoke Test
 
@@ -186,7 +187,7 @@ curl -X POST http://localhost:8000/actions/dispatch-webhook -H "Content-Type: ap
 curl http://localhost:8000/actions/log
 ```
 
-## Test
+## Testler
 
 ```bash
 cd backend
@@ -195,17 +196,22 @@ python3 -m unittest tests/test_api_contracts.py tests/test_risk_and_simulation.p
 
 ## Demo Çıktıları (Ölçülebilir Etki)
 
-- Tahmini fire maliyeti (TL)
-- Kurtarılabilir değer (TL)
-- Kurtarılabilir gıda (kg)
-- Önlenebilir CO2 etkisi (kg)
-- Aksiyon bazlı net etki simülasyonu
+*   Tahmini fire maliyeti (TL)
+*   Kurtarılabilir değer (TL)
+*   Kurtarılabilir gıda (kg)
+*   Önlenebilir CO2 etkisi (kg)
+*   Aksiyon bazlı net etki simülasyonu
 
 ## Teknolojiler
 
-- Python 3
-- FastAPI
-- Uvicorn
-- HTML/CSS/JavaScript
-- OpenAI SDK
-- Google Generative AI SDK
+*   Python 3
+*   FastAPI
+*   Uvicorn
+*   HTML/CSS/JavaScript
+*   Google Generative AI SDK
+
+## Tedarikçi Sipariş Mail Taslağı (Demo Ekranı)
+
+FireRadar AI, belirlenen aksiyonlar doğrultusunda tedarikçilere gönderilecek sipariş veya iade mail taslaklarını otomatik olarak oluşturur. Bu özellik, operasyonel süreçleri hızlandırarak manuel hata riskini azaltır ve tedarikçi iletişiminizi standartlaştırır.
+
+*(Buraya tedarikçi mail taslağı ekran görüntüsü veya ilgili bir görsel eklenebilir.)*
