@@ -13,7 +13,7 @@ FireRadar AI, gıda KOBİ'leri ve kooperatiflerde son kullanım tarihi yaklaşan
 
 Risk motoru, simülasyon motoru ve LLM destekli operasyon ajanı entegrasyonu.
 
-## Jüri Değerlendirme Alanları ve FireRadar AI'ın Katkısı
+## Jüri Değerlendirme Alanları ve FireRadar AI'ın Uygunluğu
 
 FireRadar AI projesi, değerlendirme kriterlerine aşağıdaki yaklaşımlarla katkı sağlamaktadır:
 
