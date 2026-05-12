@@ -1,46 +1,46 @@
 # FireRadar AI
 
-FireRadar AI, gida KOBI'leri ve kooperatiflerde son kullanim tarihi yaklasan urunleri erken tespit edip finansal etkiyi hesaplayan ve aksiyon oneren bir AI operasyon MVP'sidir.
+FireRadar AI, gıda KOBİ'leri ve kooperatiflerde son kullanım tarihi yaklaşan ürünleri erken tespit edip finansal etkiyi hesaplayan ve aksiyon öneren bir AI operasyon MVP'sidir.
 
-## Problem ve Cozum (1 Cumle)
+## Problem ve Çözüm (1 Cümle)
 
-- Problem: Stok, siparis, kampanya ve tedarik kararlarinin manuel yurutulmesi fireyi gec fark ettiriyor ve kaybi artiriyor.
-- Cozum: FireRadar tek panelde risk hesaplayip en etkili aksiyonu oneriyor, kampanya/tedarik iletisim taslagi uretip operasyonu hizlandiriyor.
+- Problem: Stok, sipariş, kampanya ve tedarik kararlarının manuel yürütülmesi fireyi geç fark ettiriyor ve kaybı artırıyor.
+- Çözüm: FireRadar tek panelde risk hesaplayıp en etkili aksiyonu öneriyor, kampanya/tedarik iletişim taslağı üretip operasyonu hızlandırıyor.
 
-## Konumlandirma
+## Konumlandırma
 
-Risk motoru + simulasyon motoru + LLM destekli operasyon ajani.
+Risk motoru + simülasyon motoru + LLM destekli operasyon ajanı.
 
-## Juri Kriteri -> Bizdeki Karsiligi
+## Jüri Kriteri -> Bizdeki Karşılığı
 
-1. Problem Tanimi ve Deger Onerisi
-   - `backend/services/risk_engine.py` fire riskini urun bazinda hesaplar.
-   - `frontend/index.html` ana panelde "bugun ne yapmaliyim" akisina odaklanir.
-2. AI Kullaniminin Dogrulugu
-   - LLM, karar motorundan gelen sayisal cikti uzerinden metin uretir (`backend/services/ai_service.py`).
-   - API key yoksa fallback devreye girer; demo surekliligi korunur.
+1. Problem Tanımı ve Değer Önerisi
+   - `backend/services/risk_engine.py` fire riskini ürün bazında hesaplar.
+   - `frontend/index.html` ana panelde "bugün ne yapmalıyım" akışına odaklanır.
+2. AI Kullanımının Doğruluğu
+   - LLM, karar motorundan gelen sayısal çıktı üzerinden metin üretir (`backend/services/ai_service.py`).
+   - API key yoksa fallback devreye girer; demo sürekliliği korunur.
 3. Teknik Uygulama ve Mimari
-   - FastAPI backend + moduler servisler + sade frontend.
-   - `main.py` endpoint orkestrasyonu, servisler domain mantigi.
-4. Urunlesme ve Kullanici Deneyimi
-   - Tek ekran KPI + simule et + aksiyon sec + ajan calistir.
-   - Hata mesajlari ve API baglanti fallback metinleri mevcut.
-5. Yenilikcilik
-   - Sadece chatbot degil: risk skoru + net etki simulasyonu + ROI benzeri oncelik + fire/kg/CO2 birlikte.
-6. Calisabilirlik
-   - Uctan uca demo akisi localde calisir.
-   - `backend/tests` altinda API contract ve unit testler vardir.
-7. Dokumantasyon ve Kod Paylasimi
-   - README kurulum, mimari, endpoint ve test adimlarini kapsar.
+   - FastAPI backend + modüler servisler + sade frontend.
+   - `main.py` endpoint orkestrasyonu, servisler domain mantığı.
+4. Ürünleşme ve Kullanıcı Deneyimi
+   - Tek ekran KPI + simüle et + aksiyon seç + ajan çalıştır.
+   - Hata mesajları ve API bağlantı fallback metinleri mevcut.
+5. Yenilikçilik
+   - Sadece chatbot değil: risk skoru + net etki simülasyonu + ROI benzeri öncelik + fire/kg/CO2 birlikte.
+6. Çalışabilirlik
+   - Uçtan uca demo akışı localde çalışır.
+   - `backend/tests` altında API contract ve unit testler vardır.
+7. Dokümantasyon ve Kod Paylaşımı
+   - README kurulum, mimari, endpoint ve test adımlarını kapsar.
 
-## MVP Kapsami
+## MVP Kapsamı
 
-- Urun bazli risk analizi
-- Tahmini fire maliyeti ve kurtarilabilir deger
-- Aksiyon karsilastirmasi ve en iyi aksiyon secimi
-- Segment bazli kampanya metni ve tedarikci mail taslagi
+- Ürün bazlı risk analizi
+- Tahmini fire maliyeti ve kurtarılabilir değer
+- Aksiyon karşılaştırması ve en iyi aksiyon seçimi
+- Segment bazlı kampanya metni ve tedarikçi mail taslağı
 - Aksiyon loglama (`pending/sent/failed/completed`)
-- Webhook dispatch ile "aksiyon alabilen" entegrasyon kaniti
+- Webhook dispatch ile "aksiyon alabilen" entegrasyon kanıtı
 
 ## Teknik Mimari
 
@@ -60,32 +60,32 @@ Action Log + Webhook Dispatch
 
 - Backend: FastAPI + Python
 - Frontend: HTML/CSS/JavaScript
-- Veri: CSV tabanli demo veri
+- Veri: CSV tabanlı demo veri
 - AI: OpenAI veya Gemini (anahtar yoksa deterministic fallback)
 
-## AI Nerede Kullaniliyor?
+## AI Nerede Kullanılıyor?
 
-- Gunluk ozet metni
-- Kampanya mesaji varyantlari
-- Tedarikci siparis mail taslagi
-- Chat asistani ve demo pitch metni
+- Günlük özet metni
+- Kampanya mesajı varyantları
+- Tedarikçi sipariş mail taslağı
+- Chat asistanı ve demo pitch metni
 
-Not: Sayisal kararlar risk/simulasyon motorunda uretilir, LLM metin katmanidir.
+Not: Sayısal kararlar risk/simülasyon motorunda üretilir, LLM metin katmanıdır.
 
-## Decision Logic (Motor Kurallari)
+## Decision Logic (Motor Kuralları)
 
-LLM sadece metin uretir; karar secimi backend motoru tarafinda su kurallarla yapilir:
+LLM sadece metin üretir; karar seçimi backend motoru tarafında şu kurallarla yapılır:
 
-1. Stok, SKT ve son donem satis hizindan urun bazli `risk_score` hesaplanir.
-2. Kategoriye gore risk agirliklari degisir (et/balikta SKT baskisi daha yuksek).
-3. Fire maliyeti, kurtarilabilir deger, kg fire ve CO2 etkisi birlikte hesaplanir.
-4. Her urun icin birden fazla aksiyon senaryosu (indirim + kanal) simule edilir.
-5. Simulasyonda kanal bazli operasyon maliyeti uygulanir (SMS/WhatsApp/E-posta/Push).
-6. `net_impact = prevented_loss + gross_margin - operation_cost` formulu kullanilir.
-7. Et/balik kategorisinde SKT=0 ve agresif kampanya durumunda hard constraint devreye girer.
-8. Hard constraint durumunda kampanya yerine guvenli prosedur (kalite kontrol/ayristirma) onerilir.
-9. Musteri hedefleme, kategori + segment + ilgi etiketi + kanal tercihi ile yapilir.
-10. Nihai secim, net etki ve kayip azaltim yuzdesine gore siralanarak belirlenir.
+1. Stok, SKT ve son dönem satış hızından ürün bazlı `risk_score` hesaplanır.
+2. Kategoriye göre risk ağırlıkları değişir (et/balıkta SKT baskısı daha yüksek).
+3. Fire maliyeti, kurtarılabilir değer, kg fire ve CO2 etkisi birlikte hesaplanır.
+4. Her ürün için birden fazla aksiyon senaryosu (indirim + kanal) simüle edilir.
+5. Simülasyonda kanal bazlı operasyon maliyeti uygulanır (SMS/WhatsApp/E-posta/Push).
+6. `net_impact = prevented_loss + gross_margin - operation_cost` formülü kullanılır.
+7. Et/balık kategorisinde SKT=0 ve agresif kampanya durumunda hard constraint devreye girer.
+8. Hard constraint durumunda kampanya yerine güvenli prosedür (kalite kontrol/ayrıştırma) önerilir.
+9. Müşteri hedefleme, kategori + segment + ilgi etiketi + kanal tercihi ile yapılır.
+10. Nihai seçim, net etki ve kayıp azaltım yüzdesine göre sıralanarak belirlenir.
 
 ## Kurulum
 
@@ -106,15 +106,15 @@ cd frontend
 python3 -m http.server 5173
 ```
 
-Tarayici:
+Tarayıcı:
 
 ```text
 http://localhost:5173/?api=http://localhost:8000
 ```
 
-## Env Degiskenleri
+## Env Değişkenleri
 
-Backend icin:
+Backend için:
 
 ```bash
 AI_PROVIDER=openai
@@ -125,13 +125,13 @@ GEMINI_MODEL=gemini-1.5-flash
 AI_TIMEOUT_SECONDS=20
 DEMO_PRODUCT_ID=P001
 
-# CORS: production icin en az birini ayarlayin
+# CORS: production için en az birini ayarlayın
 CORS_ORIGINS=http://localhost:5173,https://your-frontend-domain
 CORS_ORIGIN_REGEX=^https://.*\\.netlify\\.app$
 FRONTEND_URL=https://your-frontend-domain
 ```
 
-## API Ozeti
+## API Özeti
 
 Genel:
 
@@ -142,7 +142,7 @@ Genel:
 - `GET /before-after-impact`
 - `GET /impact-report`
 
-Urun bazli:
+Ürün bazlı:
 
 - `GET /decision-explanation/{product_id}`
 - `GET /action-comparison/{product_id}`
@@ -153,12 +153,12 @@ Urun bazli:
 Agent ve aksiyon:
 
 - `GET /run-agent/{product_id}` (read-only preview, log yazmaz)
-- `POST /run-agent/{product_id}` (execute, istege bagli log yazar)
+- `POST /run-agent/{product_id}` (execute, isteğe bağlı log yazar)
 - `POST /actions/log`
 - `GET /actions/log`
 - `POST /actions/dispatch-webhook`
 
-Uretim/simulasyon:
+Üretim/simülasyon:
 
 - `POST /simulate-action`
 - `POST /generate-action-plan`
@@ -167,7 +167,7 @@ Uretim/simulasyon:
 - `POST /ask-ai`
 - `POST /generate-demo-pitch`
 
-## Hizli Smoke Test
+## Hızlı Smoke Test
 
 ```bash
 curl http://localhost:8000/risk-analysis
@@ -184,13 +184,13 @@ cd backend
 python3 -m unittest tests/test_api_contracts.py tests/test_risk_and_simulation.py
 ```
 
-## Demo Ciktilari (Olculebilir Etki)
+## Demo Çıktıları (Ölçülebilir Etki)
 
 - Tahmini fire maliyeti (TL)
-- Kurtarilabilir deger (TL)
-- Kurtarilabilir gida (kg)
-- Onlenebilir CO2 etkisi (kg)
-- Aksiyon bazli net etki simulasyonu
+- Kurtarılabilir değer (TL)
+- Kurtarılabilir gıda (kg)
+- Önlenebilir CO2 etkisi (kg)
+- Aksiyon bazlı net etki simülasyonu
 
 ## Teknolojiler
 
