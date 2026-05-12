@@ -217,4 +217,4 @@ FireRadar AI, belirlenen aksiyonlar doğrultusunda tedarikçilere gönderilecek 
 <img width="342" height="555" alt="image" src="https://github.com/user-attachments/assets/ee1275c3-decb-41b3-9c94-a18b79297447" />
 
 
-*(Buraya tedarikçi mail taslağı ekran görüntüsü veya ilgili bir görsel eklenebilir.)*
+
