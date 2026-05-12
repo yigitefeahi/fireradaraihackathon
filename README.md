@@ -5,7 +5,7 @@ FireRadar AI, gıda KOBİ'leri ve kooperatiflerde son kullanım tarihi yaklaşan
 <img width="1277" height="822" alt="image" src="https://github.com/user-attachments/assets/56241a6e-8a2e-4e9e-8309-831ccdfeacb3" />
 
 
-## Problem ve Çözüm (1 Cümle)
+## Problem ve Çözüm 
 
 - Problem: Stok, sipariş, kampanya ve tedarik kararlarının manuel yürütülmesi fireyi geç fark ettiriyor ve kaybı artırıyor.
 - Çözüm: FireRadar tek panelde risk hesaplayıp en etkili aksiyonu öneriyor, kampanya/tedarik iletişim taslağı üretip operasyonu hızlandırıyor.
