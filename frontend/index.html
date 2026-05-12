@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FireRadar AI – Ana Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <nav class="app-nav" aria-label="Sayfalar">
+        <a href="index.html" class="nav-link active" data-page-target="dashboard">Ana Panel</a>
+        <a href="impact.html" class="nav-link" data-page-target="impact">Etki</a>
+        <a href="decision.html" class="nav-link" data-page-target="decision">Karar</a>
+        <a href="actions.html" class="nav-link" data-page-target="actions">Aksiyonlar</a>
+        <a href="customers.html" class="nav-link" data-page-target="customers">Müşteriler</a>
+        <a href="products.html" class="nav-link" data-page-target="products">Ürünler</a>
+        <a href="agent.html" class="nav-link" data-page-target="agent">AI Ajan</a>
+        <a href="campaigns.html" class="nav-link" data-page-target="campaigns">Kampanyalar</a>
+        <a href="orders.html" class="nav-link" data-page-target="orders">Siparişler</a>
+        <a href="reports.html" class="nav-link" data-page-target="reports">Raporlar</a>
+      </nav>
+
+      <header class="hero">
+        <div>
+          <p class="eyebrow">FireRadar AI</p>
+          <p id="simpleModeHint" class="simple-mode-hint">Sade Mod Aktif: Sadece bugünkü karar ekranı gösteriliyor.</p>
+          <p class="product-tagline">FireRadar AI: Gıda KOBİ'leri için fire önleme ve aksiyon alan operasyon ajanı.</p>
+          <h1>Tek ekran, tek karar: bugün hangi ürüne ne aksiyon alınmalı?</h1>
+          <p class="subtitle">
+            FireRadar riskli ürünü bulur, finansal etkiyi hesaplar ve uygulanabilir tekil aksiyonu önerir.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <button id="demoBtn">Bugün Ne Yapmalıyım?</button>
+          <button id="simpleModeBtn" class="ghost-btn">Sade Mod: Kapalı</button>
+          <button id="refreshBtn" class="ghost-btn">Veriyi Yenile</button>
+        </div>
+      </header>
+
+      <section id="demoGuide" class="demo-guide">
+        <div>
+          <span>Demo Modu</span>
+          <strong id="demoTitle">Hazır</strong>
+          <p id="demoText">Demo akışını başlatınca FireRadar'ın agent karar süreci adım adım gösterilir.</p>
+        </div>
+        <div class="demo-guide-actions">
+          <button id="demoPrevBtn" type="button">Geri</button>
+          <button id="demoPlayPauseBtn" type="button">Duraklat</button>
+          <button id="demoNextBtn" type="button">İleri</button>
+          <button id="demoCloseBtn" type="button">Kapat</button>
+        </div>
+      </section>
+
+
+      <!-- AI Öncesi / AI Sonrası -->
+      <section class="before-after panel">
+        <div class="impact-header-row">
+          <div>
+            <span class="section-kicker">AI Öncesi / AI Sonrası</span>
+            <h2 id="impactSentence">Etki hesaplanıyor...</h2>
+          </div>
+          <button type="button" class="ghost-btn light" data-copy-from="#impactSentence">Etki cümlesini kopyala</button>
+        </div>
+        <div class="before-after-grid">
+          <div>
+            <span>AI Öncesi Tahmini Fire Riski</span>
+            <strong id="beforeLoss">-</strong>
+          </div>
+          <div>
+            <span>AI Sonrası Kalan</span>
+            <strong id="afterLoss">-</strong>
+          </div>
+          <div>
+            <span>Kurtarılabilir</span>
+            <strong id="impactPreventable">-</strong>
+          </div>
+          <div>
+            <span>Kurtarılabilir Gıda</span>
+            <strong id="impactFood">-</strong>
+          </div>
+          <div>
+            <span>Önlenebilir CO₂</span>
+            <strong id="impactCo2">-</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bugün Yapılacaklar + Etki -->
+      <section class="today-focus">
+        <article class="panel primary-task-panel">
+          <div class="panel-header">
+            <div>
+              <span class="section-kicker">Bugün Yapılacaklar</span>
+              <h2>Önce bu işleri bitirin</h2>
+              <p>Gün içinde yapılacak en önemli işler sırayla burada.</p>
+            </div>
+            <button type="button" id="copyTasksBtn" class="ghost-btn">Görev listesini kopyala</button>
+          </div>
+          <div id="dailyTasks" class="task-list"></div>
+        </article>
+        <article class="panel impact-panel">
+          <span class="section-kicker">Bugünkü Etki</span>
+          <h2>Kurtarılabilecek Para</h2>
+          <strong id="preventableLossHero">-</strong>
+          <p>Doğru ürünlere indirim, görünür raf ve müşteri mesajıyla.</p>
+          <div class="impact-mini-grid">
+            <div>
+              <span>Önlenebilir Fire</span>
+              <b id="wasteKgHero">-</b>
+            </div>
+            <div>
+              <span>CO₂ Etkisi</span>
+              <b id="co2Hero">-</b>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Bugünün Özeti -->
+      <section class="headline-panel">
+        <div>
+          <span>Bugünün Kısa Özeti</span>
+          <strong id="headline">Yükleniyor...</strong>
+        </div>
+        <button type="button" class="ghost-btn" data-copy-from="#headline">Özeti kopyala</button>
+      </section>
+
+      <!-- Sipariş + Analitik -->
+      <section class="ops-analytics-grid">
+        <article class="panel ops-summary-panel">
+          <div class="panel-header">
+            <div>
+              <span class="section-kicker">Operasyon</span>
+              <h2>Sipariş özeti (canlı veri)</h2>
+              <p>Hazırlık, teslim ve olası gecikme — temadaki sabah paneli senaryosuyla hizalı.</p>
+            </div>
+          </div>
+          <div id="operationsSnapshotPills" class="ops-pills"></div>
+          <div id="operationsDelayList" class="delay-watch-list"></div>
+        </article>
+        <article class="panel analytics-pulse-panel">
+          <div class="panel-header">
+            <div>
+              <span class="section-kicker">Analitik</span>
+              <h2>Önümüzdeki hafta risk sırası</h2>
+              <p id="analyticsFootnote">Risk motorunun kural tabanlı öngörü çıktısı.</p>
+            </div>
+          </div>
+          <div id="analyticsExpiring" class="pulse-list"></div>
+          <div id="analyticsVelocity" class="pulse-list muted-pulse"></div>
+        </article>
+      </section>
+
+      <!-- AI Karar Zinciri -->
+      <section class="panel decision-chain-panel">
+        <span class="section-kicker">Karar Akışı</span>
+        <h2>Sistem sadece metin üretmez; veriyle adım adım ilerler</h2>
+        <p class="decision-chain-note">
+          <strong>Hesaplama motoru (backend):</strong> stok, son tüketim tarihi, satış hızı, fire maliyeti, aksiyon karşılaştırması, en uygun aksiyon seçimi, tedarikçi karar kuralları.
+          <strong>Dil modeli (opsiyonel):</strong> günlük özet, kampanya metni, yapılacaklar listesi, sohbet yanıtları — API yoksa kural tabanlı metin devreye girer.
+        </p>
+        <ol class="decision-chain" aria-label="Karar adımları">
+          <li><span>1</span> CSV ve sipariş verisini oku</li>
+          <li><span>2</span> Fire riskini ve TL etkisini hesapla</li>
+          <li><span>3</span> Aksiyonları karşılaştır</li>
+          <li><span>4</span> En uygun aksiyonu seç</li>
+          <li><span>5</span> Müşteri mesajı ve kampanya üret</li>
+          <li><span>6</span> Tedarikçi kararı / mail taslağı üret</li>
+          <li><span>7</span> AI öncesi / sonrası etkiyi raporla</li>
+        </ol>
+      </section>
+
+      <!-- Metrik Kartlar -->
+      <section class="cards">
+        <article class="card">
+          <span>Fire Maliyeti</span>
+          <strong id="totalRisk">-</strong>
+          <small>Ürünün işletmeye maliyeti</small>
+        </article>
+        <article class="card featured-card">
+          <span>Kurtarılabilir Değer</span>
+          <strong id="preventableLoss">-</strong>
+          <small>AI aksiyonlarıyla geri kazanılabilir</small>
+        </article>
+        <article class="card">
+          <span>Satış Fırsatı Riski</span>
+          <strong id="revenueRisk">-</strong>
+          <small>Satılabilseydi oluşacak potansiyel satış</small>
+        </article>
+      </section>
+
+      <!-- Ürün Tablosu + Asistan Paneli -->
+      <section class="grid">
+        <article class="panel table-panel">
+          <div class="panel-header">
+            <div>
+              <h2>Bugün Önce Bakılacak Ürünler</h2>
+              <p>Bir ürüne tıklayın. Sağ tarafta yapılacak en basit adımları görün.</p>
+            </div>
+          </div>
+          <div id="selectedProduct" class="selected-product">Ürün seçiliyor...</div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ürün</th>
+                  <th>Kalan</th>
+                  <th>Kaç Gün Var?</th>
+                  <th>Fire Maliyeti</th>
+                  <th>Öncelik Puanı</th>
+                </tr>
+              </thead>
+              <tbody id="riskTable"></tbody>
+            </table>
+          </div>
+          <div class="evidence-panel-wrap">
+            <h3 class="evidence-title">Bu öneriler hangi veriye dayanıyor?</h3>
+            <p class="evidence-sub">Seçili ürün için FireRadar'ın okuduğu CSV / motor alanları.</p>
+            <table class="evidence-table">
+              <thead>
+                <tr>
+                  <th>Kanıt</th>
+                  <th>Değer</th>
+                  <th>Kaynak</th>
+                </tr>
+              </thead>
+              <tbody id="recommendationEvidenceTable"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <aside class="panel">
+          <div class="panel-heading-row">
+            <h2>Bugün Ne Yapmalı?</h2>
+            <button type="button" class="ghost-btn" data-copy-from="#dailySummary">Özeti kopyala</button>
+          </div>
+          <p id="dailySummary" class="ai-box">Yükleniyor...</p>
+          <div class="simulator">
+            <h3>Bu kararı alırsam ne olur?</h3>
+            <p class="helper-text">İndirim oranını seçin, sistem yaklaşık ne kadar kaybı kurtarabileceğinizi göstersin.</p>
+            <label for="discountRange">İndirim: <strong id="discountLabel">%25</strong></label>
+            <input id="discountRange" type="range" min="10" max="40" step="5" value="25" />
+            <label for="channelSelect">Müşteriye nereden haber verelim?</label>
+            <select id="channelSelect">
+              <option>SMS</option>
+              <option>WhatsApp</option>
+              <option>E-posta</option>
+              <option>Push</option>
+            </select>
+            <button id="simulateBtn">Sonucu Göster</button>
+          </div>
+          <div class="result-toolbar">
+            <button type="button" class="ghost-btn" data-copy-from="#simulationResult">Simülasyon sonucunu kopyala</button>
+          </div>
+          <div id="simulationResult" class="result-box"></div>
+          <div class="actions">
+            <button id="actionPlanBtn">Bana Yapılacakları Yaz</button>
+            <label class="inline-channel-label" for="aiCampaignChannel">Kampanya kanalı</label>
+            <select id="aiCampaignChannel" class="inline-channel-select">
+              <option value="SMS">SMS</option>
+              <option value="WhatsApp">WhatsApp</option>
+              <option value="E-posta">E-posta</option>
+            </select>
+            <button id="campaignBtn" class="secondary">Müşteri Mesajı Hazırla</button>
+            <button id="supplierBtn" class="soft-button">Tedarikçi Kararı Oluştur</button>
+          </div>
+          <div class="result-toolbar">
+            <button type="button" class="ghost-btn" data-copy-from="#aiResult">AI çıktısını kopyala</button>
+            <button type="button" class="ghost-btn" data-download-from="#aiResult" data-download-name="fireradar-ai-ciktisi.txt">Metni indir (.txt)</button>
+          </div>
+          <div id="aiResult" class="result-box"></div>
+        </aside>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <span class="section-kicker">Tek Uçtan Uca Akış</span>
+            <h2>AI Agent (Demo Ürün: Organik Süt)</h2>
+            <p>Tek butonla risk analizi, aksiyon seçimi, kampanya ve tedarikçi taslağı aynı ekranda üretilir.</p>
+          </div>
+          <button id="runAgentBtn">AI Agent'i Çalıştır</button>
+        </div>
+        <div id="agentRunOutput" class="result-box"></div>
+        <div class="result-toolbar">
+          <button type="button" class="ghost-btn" data-copy-from="#agentRunOutput">Agent çıktısını kopyala</button>
+        </div>
+        <h3 id="decisionSectionTitle">Karar Açıklaması</h3>
+        <div id="decisionExplanation" class="result-box"></div>
+        <h3 id="comparisonSectionTitle">Aksiyon Karşılaştırması</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Öneri</th>
+                <th>Kanal</th>
+                <th>İndirim</th>
+                <th>Satış</th>
+                <th>Önlenen Kayıp</th>
+                <th>Beklenen Kazanç</th>
+                <th>Azaltım</th>
+                <th>Maliyet</th>
+                <th>Güven</th>
+                <th>Neden</th>
+              </tr>
+            </thead>
+            <tbody id="actionComparisonTable"></tbody>
+          </table>
+        </div>
+        <h3 id="segmentSectionTitle">Hedef Müşteri Segmenti</h3>
+        <div id="segmentMatches"></div>
+        <h3>Tedarikçi Taslağı</h3>
+        <div id="supplierDecisionOutput" class="result-box"></div>
+        <h3>Aksiyon Logları</h3>
+        <div id="actionLogList" class="result-box"></div>
+      </section>
+
+    </main>
+
+    <button id="chatToggle" class="chat-toggle" aria-label="FireRadar'a soru sor">
+      <span>?</span>
+    </button>
+
+    <aside id="chatWidget" class="chat-widget" aria-label="FireRadar sohbet penceresi">
+      <div class="chat-header">
+        <div>
+          <strong>FireRadar'a Sor</strong>
+          <span>Bugün ne yapacağınızı sorun</span>
+        </div>
+        <div class="chat-header-actions">
+          <button id="chatFullscreenBtn" type="button" aria-label="Sohbeti büyüt">⤢</button>
+          <button id="chatCloseBtn" type="button" aria-label="Sohbeti kapat">×</button>
+        </div>
+      </div>
+      <div id="chatLog" class="chat-log">
+        <div class="bot">Merhaba, bugün hangi ürüne ne yapmanız gerektiğini sorabilirsiniz.</div>
+      </div>
+      <form id="chatForm" class="chat-form">
+        <input
+          id="questionInput"
+          type="text"
+          placeholder="Örn: Önce hangi ürüne bakayım?"
+          autocomplete="off"
+        />
+        <button type="submit">Sor</button>
+      </form>
+    </aside>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

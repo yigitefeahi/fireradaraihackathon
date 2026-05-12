@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FireRadar AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <nav class="app-nav" aria-label="Sayfalar">
+        <a href="index.html" class="nav-link" data-page-target="dashboard">Ana Panel</a>
+        <a href="impact.html" class="nav-link active" data-page-target="impact">Etki</a>
+        <a href="decision.html" class="nav-link" data-page-target="decision">Karar</a>
+        <a href="actions.html" class="nav-link" data-page-target="actions">Aksiyonlar</a>
+        <a href="customers.html" class="nav-link" data-page-target="customers">Müşteriler</a>
+        <a href="products.html" class="nav-link" data-page-target="products">Ürünler</a>
+        <a href="agent.html" class="nav-link" data-page-target="agent">AI Ajan</a>
+        <a href="campaigns.html" class="nav-link" data-page-target="campaigns">Kampanyalar</a>
+        <a href="orders.html" class="nav-link" data-page-target="orders">Siparişler</a>
+        <a href="reports.html" class="nav-link" data-page-target="reports">Raporlar</a>
+      </nav>
+<section id="page-impact" class="page active" data-page="impact">
+        <section class="page-hero panel">
+          <div>
+          <span>AI Öncesi / AI Sonrası</span>
+          <h2>FireRadar'ın işletmeye etkisini görün</h2>
+          <p>Fire maliyeti, kaçan ciro riski, kurtarılabilir değer, gıda firesi ve CO₂ etkisini tek hikayede özetler.</p>
+          </div>
+        </section>
+        <section class="before-after panel">
+          <div class="impact-header-row">
+            <div>
+            <span class="section-kicker">Etki Hikayesi</span>
+            <h2 id="impactSentenceStandalone">Etki hesaplanıyor...</h2>
+            </div>
+            <button type="button" class="ghost-btn" data-copy-from="#impactSentenceStandalone">Kopyala</button>
+          </div>
+          <div class="before-after-grid">
+            <div>
+              <span>AI Öncesi Tahmini Fire Riski</span>
+              <strong id="beforeLossStandalone">-</strong>
+            </div>
+            <div>
+              <span>AI Sonrası Kalan</span>
+              <strong id="afterLossStandalone">-</strong>
+            </div>
+            <div>
+              <span>Kurtarılabilir Değer</span>
+              <strong id="impactPreventableStandalone">-</strong>
+            </div>
+            <div>
+              <span>Kurtarılabilir Gıda</span>
+              <strong id="impactFoodStandalone">-</strong>
+            </div>
+            <div>
+              <span>Önlenebilir CO₂</span>
+              <strong id="impactCo2Standalone">-</strong>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      </main>
+
+    <button id="chatToggle" class="chat-toggle" aria-label="FireRadar'a soru sor">
+      <span>?</span>
+    </button>
+
+    <aside id="chatWidget" class="chat-widget" aria-label="FireRadar sohbet penceresi">
+      <div class="chat-header">
+        <div>
+          <strong>FireRadar'a Sor</strong>
+          <span>Bugün ne yapacağınızı sorun</span>
+        </div>
+        <div class="chat-header-actions">
+          <button id="chatFullscreenBtn" type="button" aria-label="Sohbeti büyüt">⤢</button>
+          <button id="chatCloseBtn" type="button" aria-label="Sohbeti kapat">×</button>
+        </div>
+      </div>
+      <div id="chatLog" class="chat-log">
+        <div class="bot">Merhaba, bugün hangi ürüne ne yapmanız gerektiğini sorabilirsiniz.</div>
+      </div>
+      <form id="chatForm" class="chat-form">
+        <input
+          id="questionInput"
+          type="text"
+          placeholder="Örn: Önce hangi ürüne bakayım?"
+          autocomplete="off"
+        />
+        <button type="submit">Sor</button>
+      </form>
+    </aside>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

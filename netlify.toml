@@ -1,0 +1,3 @@
+# Static frontend lives in frontend/ — do not publish repo root (no index.html there).
+[build]
+  publish = "frontend"

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FireRadar AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <nav class="app-nav" aria-label="Sayfalar">
+        <a href="index.html" class="nav-link" data-page-target="dashboard">Ana Panel</a>
+        <a href="impact.html" class="nav-link" data-page-target="impact">Etki</a>
+        <a href="decision.html" class="nav-link" data-page-target="decision">Karar</a>
+        <a href="actions.html" class="nav-link" data-page-target="actions">Aksiyonlar</a>
+        <a href="customers.html" class="nav-link" data-page-target="customers">Müşteriler</a>
+        <a href="products.html" class="nav-link" data-page-target="products">Ürünler</a>
+        <a href="agent.html" class="nav-link" data-page-target="agent">AI Ajan</a>
+        <a href="campaigns.html" class="nav-link" data-page-target="campaigns">Kampanyalar</a>
+        <a href="orders.html" class="nav-link active" data-page-target="orders">Siparişler</a>
+        <a href="reports.html" class="nav-link" data-page-target="reports">Raporlar</a>
+      </nav>
+<section id="page-orders" class="page active" data-page="orders">
+        <section class="page-hero panel">
+          <div>
+          <span>Siparişler</span>
+          <h2>Sipariş durumu ve tedarikçi aksiyonu</h2>
+          <p>Temada anlatılan sabah özeti ile gecikme uyarısı; altında stok bazlı tedarikçi taslakları.</p>
+          </div>
+        </section>
+        <section class="panel" id="ordersOverviewHost">
+          <div class="panel-header">
+            <div>
+              <span class="section-kicker">Sipariş özeti</span>
+              <h2>Bugünün operasyon penceresi</h2>
+            </div>
+          </div>
+          <div id="ordersPageOpsPills" class="ops-pills"></div>
+          <div id="ordersPageDelayList" class="delay-watch-list"></div>
+        </section>
+        <section class="composer-grid">
+          <article class="panel composer-card">
+            <label for="supplierProductSelect">Ürün seçin</label>
+            <select id="supplierProductSelect"></select>
+            <button id="supplierPageBtn">Tedarikçi Kararı Oluştur</button>
+          </article>
+          <article class="panel">
+            <div class="panel-heading-row">
+              <h2>Tedarikçi Mesajı</h2>
+              <div class="result-toolbar inline">
+                <button type="button" class="ghost-btn" data-copy-from="#supplierPageOutput">Kopyala</button>
+                <button
+                  type="button"
+                  class="ghost-btn"
+                  data-download-from="#supplierPageOutput"
+                  data-download-name="fireradar-tedarikci-mesaji.txt"
+                >
+                  İndir
+                </button>
+              </div>
+            </div>
+            <div id="supplierPageOutput" class="ai-box">Bir ürün seçip tedarikçi mesajı hazırlayın.</div>
+          </article>
+        </section>
+        <section class="panel">
+          <div class="panel-heading-row">
+            <h2>Tedarikçi Kararı</h2>
+            <div class="result-toolbar inline">
+              <button type="button" class="ghost-btn" data-copy-from="#supplierDecisionOutput">Kararı kopyala</button>
+              <button
+                type="button"
+                class="ghost-btn"
+                data-download-from="#supplierDecisionOutput"
+                data-download-name="fireradar-tedarikci-karari.txt"
+              >
+                İndir
+              </button>
+            </div>
+          </div>
+          <div id="supplierDecisionOutput" class="ai-box">Ürün seçildiğinde sipariş artırma/azaltma kararı burada görünür.</div>
+        </section>
+      </section>
+
+      </main>
+
+    <button id="chatToggle" class="chat-toggle" aria-label="FireRadar'a soru sor">
+      <span>?</span>
+    </button>
+
+    <aside id="chatWidget" class="chat-widget" aria-label="FireRadar sohbet penceresi">
+      <div class="chat-header">
+        <div>
+          <strong>FireRadar'a Sor</strong>
+          <span>Bugün ne yapacağınızı sorun</span>
+        </div>
+        <div class="chat-header-actions">
+          <button id="chatFullscreenBtn" type="button" aria-label="Sohbeti büyüt">⤢</button>
+          <button id="chatCloseBtn" type="button" aria-label="Sohbeti kapat">×</button>
+        </div>
+      </div>
+      <div id="chatLog" class="chat-log">
+        <div class="bot">Merhaba, bugün hangi ürüne ne yapmanız gerektiğini sorabilirsiniz.</div>
+      </div>
+      <form id="chatForm" class="chat-form">
+        <input
+          id="questionInput"
+          type="text"
+          placeholder="Örn: Önce hangi ürüne bakayım?"
+          autocomplete="off"
+        />
+        <button type="submit">Sor</button>
+      </form>
+    </aside>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
