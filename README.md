@@ -2,6 +2,9 @@
 
 FireRadar AI, gıda KOBİ'leri ve kooperatiflerde son kullanım tarihi yaklaşan ürünleri erken tespit edip finansal etkiyi hesaplayan ve aksiyon öneren bir AI operasyon MVP'sidir.
 
+<img width="1277" height="822" alt="image" src="https://github.com/user-attachments/assets/56241a6e-8a2e-4e9e-8309-831ccdfeacb3" />
+
+
 ## Problem ve Çözüm (1 Cümle)
 
 - Problem: Stok, sipariş, kampanya ve tedarik kararlarının manuel yürütülmesi fireyi geç fark ettiriyor ve kaybı artırıyor.
@@ -32,6 +35,9 @@ Risk motoru + simülasyon motoru + LLM destekli operasyon ajanı.
    - `backend/tests` altında API contract ve unit testler vardır.
 7. Dokümantasyon ve Kod Paylaşımı
    - README kurulum, mimari, endpoint ve test adımlarını kapsar.
+
+<img width="1106" height="826" alt="image" src="https://github.com/user-attachments/assets/03318036-a9d4-4bfb-a8c5-116d55486fd7" />
+
 
 ## MVP Kapsamı
 
@@ -86,6 +92,9 @@ LLM sadece metin üretir; karar seçimi backend motoru tarafında şu kurallarla
 8. Hard constraint durumunda kampanya yerine güvenli prosedür (kalite kontrol/ayrıştırma) önerilir.
 9. Müşteri hedefleme, kategori + segment + ilgi etiketi + kanal tercihi ile yapılır.
 10. Nihai seçim, net etki ve kayıp azaltım yüzdesine göre sıralanarak belirlenir.
+
+<img width="1232" height="752" alt="image" src="https://github.com/user-attachments/assets/f074aaf6-12c3-4d52-adab-c097c6dd7d77" />
+
 
 ## Kurulum
 
