@@ -16,43 +16,20 @@ class AIService:
         self.provider = os.getenv("AI_PROVIDER", "openai").lower()
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         self.gemini_api_key = os.getenv("GEMINI_API_KEY")
-        self.groq_api_key = os.getenv("GROQ_API_KEY")
-        self.groq_base_url = os.getenv("GROQ_BASE_URL", "https://api.groq.com/openai/v1")
         self.timeout_seconds = float(os.getenv("AI_TIMEOUT_SECONDS", "20"))
 
     @property
     def has_external_provider(self) -> bool:
-        return bool(self.openai_api_key or self.gemini_api_key or self.groq_api_key)
+        return bool(self.openai_api_key or self.gemini_api_key)
 
     async def complete(self, prompt: str) -> str:
-        if self.provider == "groq" and self.groq_api_key:
-            response = await self._run_with_timeout(self._complete_with_groq, prompt)
-            if response:
-                return response
-
         if self.provider == "gemini" and self.gemini_api_key:
             response = await self._run_with_timeout(self._complete_with_gemini, prompt)
             if response:
                 return response
 
-        if self.provider == "openai" and self.openai_api_key:
-            response = await self._run_with_timeout(self._complete_with_openai, prompt)
-            if response:
-                return response
-
-        # Cross-provider fallback for production resilience.
-        if self.groq_api_key:
-            response = await self._run_with_timeout(self._complete_with_groq, prompt)
-            if response:
-                return response
-
         if self.openai_api_key:
             response = await self._run_with_timeout(self._complete_with_openai, prompt)
-            if response:
-                return response
-
-        if self.gemini_api_key:
-            response = await self._run_with_timeout(self._complete_with_gemini, prompt)
             if response:
                 return response
 
@@ -74,32 +51,6 @@ class AIService:
             client = OpenAI(api_key=self.openai_api_key)
             response = client.chat.completions.create(
                 model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
-                messages=[
-                    {
-                        "role": "system",
-                        "content": (
-                            "You are FireRadar AI, a Turkish AI operations copilot for grocery retailers. "
-                            "Answer with quantified impact, clear next actions, and a confident hackathon demo tone."
-                        ),
-                    },
-                    {"role": "user", "content": prompt},
-                ],
-                temperature=0.4,
-            )
-            return response.choices[0].message.content
-        except Exception:
-            return None
-
-    def _complete_with_groq(self, prompt: str) -> Optional[str]:
-        try:
-            from openai import OpenAI
-
-            client = OpenAI(
-                api_key=self.groq_api_key,
-                base_url=self.groq_base_url,
-            )
-            response = client.chat.completions.create(
-                model=os.getenv("GROQ_MODEL", "llama-3.1-8b-instant"),
                 messages=[
                     {
                         "role": "system",
