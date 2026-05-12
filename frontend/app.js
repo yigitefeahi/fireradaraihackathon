@@ -1467,7 +1467,7 @@ async function askAI(event) {
       method: "POST",
       body: JSON.stringify({
         question,
-        product_id: DEMO_PRODUCT_ID,
+        product_id: state.selectedProductId || DEMO_PRODUCT_ID,
       }),
     });
     pending.textContent = result.answer;
