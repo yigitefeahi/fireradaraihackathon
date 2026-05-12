@@ -596,7 +596,7 @@ async def generate_campaign_message(request: CampaignRequest) -> dict[str, Any]:
 async def ask_ai(request: AskAIRequest) -> dict[str, Any]:
     risk_items, summary, high_risk_products = _risk_context()
     # Chatbot is intentionally pinned to the demo product context for a consistent hackathon flow.
-    selected_product = _select_product(risk_items, DEMO_PRODUCT_ID)
+    selected_product = _select_product(risk_items, request.product_id)
     prompt = build_chat_prompt(
         request.question,
         summary,
