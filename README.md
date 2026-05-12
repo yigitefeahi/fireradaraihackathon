@@ -96,6 +96,30 @@ LLM sadece metin üretir; karar seçimi backend motoru tarafında şu kurallarla
 
 <img width="1232" height="752" alt="image" src="https://github.com/user-attachments/assets/f074aaf6-12c3-4d52-adab-c097c6dd7d77" />
 
+## Kurulum
+
+### 1) Backend
+
+```bash
+cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+
+### 2) Frontend
+
+```bash
+cd frontend
+python3 -m http.server 5173
+```
+
+Tarayici:
+
+```text
+http://localhost:5173/?api=http://localhost:8000
+```
 
 ## Demo Çıktıları (Ölçülebilir Etki)
 
