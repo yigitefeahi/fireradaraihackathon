@@ -210,8 +210,11 @@ python3 -m unittest tests/test_api_contracts.py tests/test_risk_and_simulation.p
 *   HTML/CSS/JavaScript
 *   Google Generative AI SDK
 
-## Tedarikçi Sipariş Mail Taslağı (Demo Ekranı)
+## Tedarikçi Mesajı Taslağı 
 
-FireRadar AI, belirlenen aksiyonlar doğrultusunda tedarikçilere gönderilecek sipariş veya iade mail taslaklarını otomatik olarak oluşturur. Bu özellik, operasyonel süreçleri hızlandırarak manuel hata riskini azaltır ve tedarikçi iletişiminizi standartlaştırır.
+FireRadar AI, belirlenen aksiyonlar doğrultusunda tedarikçilere gönderilecek sipariş mesaj taslaklarını otomatik olarak oluşturur. Bu özellik, operasyonel süreçleri hızlandırarak manuel hata riskini azaltır ve tedarikçi iletişiminizi standartlaştırır.
+
+<img width="342" height="555" alt="image" src="https://github.com/user-attachments/assets/ee1275c3-decb-41b3-9c94-a18b79297447" />
+
 
 *(Buraya tedarikçi mail taslağı ekran görüntüsü veya ilgili bir görsel eklenebilir.)*
