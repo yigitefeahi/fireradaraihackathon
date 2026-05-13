@@ -50,7 +50,7 @@ Demoda Gösterilmeyen Diğer Sistem Fonksiyonları:
 
 <img width="3420" height="1823" alt="870A07A8-24F6-4930-97FE-A21A32680FCB_1_201_a" src="https://github.com/user-attachments/assets/dbfe2dce-ae4d-4428-adce-089e1e060b30" />
 
-<img width="3420" height="1821" alt="06DEB17B-F17E-4762-9B1B-FA49D8990470_1_201_a" src="https://github.com/user-attachments/assets/a85c1d4d-500f-4a4e-984e-dfa4b89614ef" />
+<img width="3420" height="1597" alt="06DEB17B-F17E-4762-9B1B-FA49D8990470_1_201_a" src="https://github.com/user-attachments/assets/20b73153-55b2-4aec-bc71-114e27e3197e" />
 
 <img width="3420" height="1803" alt="000046F0-FFCF-42FB-BAD8-FEAAE7294179_1_201_a" src="https://github.com/user-attachments/assets/de13ff9d-e6ad-4e1b-80b6-5ee87e9e5cd6" />
 
