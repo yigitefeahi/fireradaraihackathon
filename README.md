@@ -147,17 +147,11 @@ http://localhost:5173/?api=http://localhost:8000
 
 ## Teknolojiler
 
-*   Python 3
+*   Python
 *   FastAPI
 *   Uvicorn
 *   HTML/CSS/JavaScript
 *   Google Generative AI SDK
-
-## Tedarikçi Mesajı Taslağı 
-
-FireRadar AI, belirlenen aksiyonlar doğrultusunda tedarikçilere gönderilecek sipariş mesaj taslaklarını otomatik olarak oluşturur. Bu özellik, operasyonel süreçleri hızlandırarak manuel hata riskini azaltır ve tedarikçi iletişiminizi standartlaştırır.
-
-<img width="342" height="555" alt="image" src="https://github.com/user-attachments/assets/ee1275c3-decb-41b3-9c94-a18b79297447" />
 
 
 
