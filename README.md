@@ -37,10 +37,22 @@ FireRadar AI projesi, değerlendirme kriterlerine aşağıdaki yaklaşımlarla k
     *   FireRadar AI, sadece bir chatbot olmanın ötesinde; risk skoru hesaplama, net etki simülasyonu, ROI benzeri önceliklendirme ve fire/kg/CO2 etkisini bir arada değerlendirme gibi yenilikçi özellikler sunar.
 6.  **Dokümantasyon ve Kod Paylaşımı**
     *   README dosyası, kurulum adımları, mimari genel bakış, API endpointleri ve test süreçlerini kapsamlı bir şekilde açıklar.
+  
+Demoda Gösterilmeyen Diğer Sistem Fonksiyonları:
 
 <img width="3417" height="1813" alt="83E17A67-A3D0-4CD2-AA2D-CC620183A536_1_201_a" src="https://github.com/user-attachments/assets/3dbc624f-ded1-47dd-ad2b-95ad2a6a88cd" />
 
 <img width="3420" height="1811" alt="BB838CD8-27DF-4B9B-9E53-018A1E0C10F5_1_201_a" src="https://github.com/user-attachments/assets/285fc44a-3eb9-47c8-93d8-8838ec32c9a9" />
+
+<img width="3420" height="1850" alt="58A7CEEC-AA17-4286-AEBF-46A7206506FD_1_201_a" src="https://github.com/user-attachments/assets/93126f37-21d1-45b8-8f56-c038af895e9d" />
+
+<img width="3420" height="1842" alt="3909C6B1-1FDB-4185-9820-EC77B86E5F5E_1_201_a" src="https://github.com/user-attachments/assets/71d00221-c6e0-4755-80dc-5ab3b11bcd25" />
+
+<img width="3420" height="1823" alt="870A07A8-24F6-4930-97FE-A21A32680FCB_1_201_a" src="https://github.com/user-attachments/assets/dbfe2dce-ae4d-4428-adce-089e1e060b30" />
+
+<img width="3420" height="1821" alt="06DEB17B-F17E-4762-9B1B-FA49D8990470_1_201_a" src="https://github.com/user-attachments/assets/a85c1d4d-500f-4a4e-984e-dfa4b89614ef" />
+
+<img width="3420" height="1803" alt="000046F0-FFCF-42FB-BAD8-FEAAE7294179_1_201_a" src="https://github.com/user-attachments/assets/de13ff9d-e6ad-4e1b-80b6-5ee87e9e5cd6" />
 
 ## MVP Kapsamı
 
