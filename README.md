@@ -40,6 +40,8 @@ FireRadar AI projesi, değerlendirme kriterlerine aşağıdaki yaklaşımlarla k
 
 <img width="3417" height="1813" alt="83E17A67-A3D0-4CD2-AA2D-CC620183A536_1_201_a" src="https://github.com/user-attachments/assets/3dbc624f-ded1-47dd-ad2b-95ad2a6a88cd" />
 
+<img width="3420" height="1811" alt="BB838CD8-27DF-4B9B-9E53-018A1E0C10F5_1_201_a" src="https://github.com/user-attachments/assets/285fc44a-3eb9-47c8-93d8-8838ec32c9a9" />
+
 ## MVP Kapsamı
 
 *   Ürün bazlı risk analizi
