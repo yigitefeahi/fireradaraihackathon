@@ -8,6 +8,8 @@ Canlı Demo(netlify): https://fireradaraihackath.netlify.app/?api=https://firera
 
 Canlı Demo(vercel): https://fireradaraihackathon.vercel.app
 
+1 Dakikalık Demo Sunumu(youtube): https://www.youtube.com/watch?v=LBWIq8knzbA
+
 <img width="3420" height="1847" alt="AAD1C73D-5FEF-4E00-9FDB-42F0533942F0_1_201_a" src="https://github.com/user-attachments/assets/8f5eeadc-d6cb-4428-8695-7aeb61b34cc4"/>
 
 ## Problem ve Çözüm
