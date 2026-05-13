@@ -110,8 +110,6 @@ LLM sadece metin üretir; karar seçimi backend motoru tarafında şu kurallarla
 9.  Müşteri hedefleme, kategori + segment + ilgi etiketi + kanal tercihi ile yapılır.
 10. Nihai seçim, net etki ve kayıp azaltım yüzdesine göre sıralanarak belirlenir.
 
-<img width="1232" height="752" alt="image" src="https://github.com/user-attachments/assets/f074aaf6-12c3-4d52-adab-c097c6dd7d77" />
-
 ## Kurulum
 
 ### 1) Backend
