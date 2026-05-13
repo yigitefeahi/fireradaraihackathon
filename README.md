@@ -75,6 +75,11 @@ Bu ekran, sistemin sohbet asistanı gibi çalışan kısmı. Kullanıcı buraya 
 
 <img width="3420" height="1803" alt="000046F0-FFCF-42FB-BAD8-FEAAE7294179_1_201_a" src="https://github.com/user-attachments/assets/de13ff9d-e6ad-4e1b-80b6-5ee87e9e5cd6" />
 
+
+##Et ve balık gibi ürünlerde SKT = 0 ve agresif kampanya hard constraint
+
+Gıda güvenliği açısından riskli kategorilerde, özellikle et/balık ürünlerinde SKT=0 durumunda sistem kampanya önermek yerine kalite kontrol, ayrıştırma veya güvenli imha prosedürü önerir.
+
 ## MVP Kapsamı
 
 *   Ürün bazlı risk analizi
