@@ -176,7 +176,4 @@ http://localhost:5173/?api=http://localhost:8000
 *   FastAPI
 *   Uvicorn
 *   HTML/CSS/JavaScript
-*   Google Generative AI SDK
-
-
-
+*   Yapay Zeka: Gemini / OpenAI uyumlu LLM katmanı; API anahtarı yoksa deterministik fallback
