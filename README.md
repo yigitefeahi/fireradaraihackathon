@@ -55,7 +55,7 @@ Burada “İndirim yaparsam ne olur?” sorusunun cevabı görülür. İndirim o
 
 <img width="3420" height="1850" alt="58A7CEEC-AA17-4286-AEBF-46A7206506FD_1_201_a" src="https://github.com/user-attachments/assets/93126f37-21d1-45b8-8f56-c038af895e9d" />
 
-5. Riskli Ürünler ve Aksiyon ekranı
+4. Riskli Ürünler ve Aksiyon ekranı
 Bu ekran, hangi ürünlerin acil müdahale istediğini listeler. Kullanıcı ürünleri görür, indirim simülasyonu yapar, müşteriye SMS taslağı hazırlatır veya tedarikçiye karar metni oluşturur. Günlük operasyon için pratik aksiyon ekranı gibi çalışır.
 
 <img width="3420" height="1842" alt="3909C6B1-1FDB-4185-9820-EC77B86E5F5E_1_201_a" src="https://github.com/user-attachments/assets/71d00221-c6e0-4755-80dc-5ab3b11bcd25" />
@@ -70,7 +70,7 @@ Bu bölüm, seçilen ürün için tedarikçiye ne yazılacağını hazırlar. Me
 
 <img width="3420" height="1597" alt="06DEB17B-F17E-4762-9B1B-FA49D8990470_1_201_a" src="https://github.com/user-attachments/assets/20b73153-55b2-4aec-bc71-114e27e3197e" />
 
-7.“FireRadar’a Sor” ekranı
+7. FireRadar’a Sor ekranı
 Bu ekran, sistemin sohbet asistanı gibi çalışan kısmı. Kullanıcı buraya “Önce hangi ürüne bakayım?” gibi soru yazıyor. Sistem de en riskli ürünü seçip ne yapılması gerektiğini kısa kısa söylüyor: indirim yap, müşteriye mesaj gönder, raf görünürlüğünü artır gibi.
 
 <img width="3420" height="1803" alt="000046F0-FFCF-42FB-BAD8-FEAAE7294179_1_201_a" src="https://github.com/user-attachments/assets/de13ff9d-e6ad-4e1b-80b6-5ee87e9e5cd6" />
