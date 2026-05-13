@@ -1,4 +1,4 @@
-<img width="3420" height="1847" alt="AAD1C73D-5FEF-4E00-9FDB-42F0533942F0_1_201_a" src="https://github.com/user-attachments/assets/8f5eeadc-d6cb-4428-8695-7aeb61b34cc4" /># FireRadar AI
+/># FireRadar AI
 
 FireRadar AI, gıda KOBİ'leri ve kooperatiflerde son kullanım tarihi yaklaşan ürünleri erken tespit ederek finansal etkiyi hesaplayan ve aksiyon öneren bir yapay zeka destekli operasyonel MVP'dir.
 
@@ -6,9 +6,7 @@ Canlı Demo(netlify): https://fireradaraihackath.netlify.app/?api=https://firera
 
 Canlı Demo(vercel): https://fireradaraihackathon.vercel.app
 
-Uploading AAD1C73D-5FEF-4E00-9FDB-42F0533942F0_1_201_a.jpeg…
-
-<img width="1277" height="822" alt="image" src="https://github.com/user-attachments/assets/56241a6e-8a2e-4e9e-8309-831ccdfeacb3" />
+<img width="3420" height="1847" alt="AAD1C73D-5FEF-4E00-9FDB-42F0533942F0_1_201_a" src="https://github.com/user-attachments/assets/8f5eeadc-d6cb-4428-8695-7aeb61b34cc4" 
 
 ## Problem ve Çözüm
 
