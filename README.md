@@ -1,6 +1,8 @@
 # FireRadar AI
 
-FireRadar AI, gıda KOBİ'leri ve kooperatiflerde son kullanım tarihi yaklaşan ürünleri erken tespit ederek finansal etkiyi hesaplayan ve aksiyon öneren bir yapay zeka destekli operasyonel MVP'dir.
+FireRadar AI, gıda KOBİ’leri ve kooperatiflerde son kullanma tarihi yaklaşan ürünleri erken tespit eden, tahmini fire maliyetini hesaplayan ve aksiyon önerileri sunan yapay zeka destekli operasyonel bir MVP’dir.
+
+Sistem; stok, SKT, satış hızı ve kategori bilgilerini kullanarak ürün bazlı risk skoru üretir. Ardından indirim, kanal seçimi, müşteri iletişimi ve tedarikçi kararı gibi aksiyonları simüle ederek net etkiyi hesaplar. LLM katmanı ise bu sayısal kararları günlük özet, kampanya mesajı, tedarikçi maili ve chat asistanı yanıtlarına dönüştürür.
 
 Canlı Demo(netlify): https://fireradaraihackath.netlify.app/?api=https://fireradaraihackathon.onrender.com
 
