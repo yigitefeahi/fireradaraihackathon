@@ -38,7 +38,7 @@ FireRadar AI projesi, değerlendirme kriterlerine aşağıdaki yaklaşımlarla k
 6.  **Dokümantasyon ve Kod Paylaşımı**
     *   README dosyası, kurulum adımları, mimari genel bakış, API endpointleri ve test süreçlerini kapsamlı bir şekilde açıklar.
 
-<img width="1106" height="826" alt="image" src="https://github.com/user-attachments/assets/03318036-a9d4-4bfb-a8c5-116d55486fd7" />
+<img width="3417" height="1813" alt="83E17A67-A3D0-4CD2-AA2D-CC620183A536_1_201_a" src="https://github.com/user-attachments/assets/3dbc624f-ded1-47dd-ad2b-95ad2a6a88cd" />
 
 ## MVP Kapsamı
 
